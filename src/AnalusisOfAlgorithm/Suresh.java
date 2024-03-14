@@ -5,14 +5,20 @@ import java.util.Scanner;
 
 public class Suresh {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        double now = System.currentTimeMillis();
 
-        int n = scanner.nextInt();
+        Suresh demo = new Suresh();
+        System.out.println(demo.findSum(99999999));
+
+        System.out.println("Time: " + (System.currentTimeMillis() - now) + "milisecs." );
+
+    }
+
+    public int findSum(int n){
         int sum = 0;
         for (int i = 0; i <= n; i++) {
             sum += i;
         }
-
-        System.out.println(sum);
+        return  sum;
     }
 }

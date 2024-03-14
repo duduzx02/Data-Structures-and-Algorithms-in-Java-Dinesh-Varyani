@@ -6,5 +6,3 @@
 ## Time Complexity (Complexidade de tempo)
 - O tempo que um algoritmo leva para ser executado.
 - Um algoritmo recebe uma entrada e, para procesar essa entrada, leava algum tempo.
-
-### Embora calcular o tempo da execução do algoritmo seja útil, há ferramentas matemáricas mais precisas.
