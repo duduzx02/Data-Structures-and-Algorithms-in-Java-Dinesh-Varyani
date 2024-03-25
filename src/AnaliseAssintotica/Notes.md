@@ -46,3 +46,58 @@
 - Exemplo 1: Tempo de execução = n² + 3n + 1 - > O(n²)
 - Exemplo 2: Tempo de execução = 3n² + 6n + 1 - > O(n²)
 
+# Complexidade de Tempo de Algoritmos Constantes
+## Entendendo as Regras da Notação Big O
+- Em nosso vídeo anterior, abordamos as regras relacionadas à notação Big O. Vamos aplicar essas regras e calcular a 
+  complexidade de tempo de um algoritmo constante.  
+
+### Código de Algoritmo Constante
+````Java
+    int sum(int x, int y) {
+        return x + y;
+    }
+````
+
+## Análise da Complexidade de Tempo
+- Linha 2:
+- - Acessando x e y: 2 operações
+- - Somando x e y: 1 operação
+- - Atribuindo o resultado a result: 1 operação
+- - Total: 4 operações (4 unidades de tempo)
+- Linha 3:
+- - Acessando result: 1 operação
+- - Retornando result: 1 operação
+- - Total: 2 operações (2 unidades de tempo)
+
+## Tempo Total
+- Tempo total = 4 (Linha 2) + 2 (Linha 3) = 6 unidades de tempo
+
+## Definição de Algoritmo Constante
+- O tempo gasto por este algoritmo permanece constante, independentemente dos valores de entrada (x e y). Portanto, 
+  é considerado um algoritmo constante. 
+
+## Código de Acesso a Array
+````Java
+
+    int getArrayValue(int[] arr, int index){
+        return arr[index];
+    }
+````
+- Linha 2:
+- - Acessando o valor do array no índice especificado: 1 operação
+- - Retornando o valor: 1 operação
+- - Total: 2 operações (2 unidades de tempo)
+
+## Complexidade de Tempo Constante
+- O tempo gasto para acessar um valor de array em um índice específico é constante, independentemente do tamanho do 
+  array. Portanto, este é também um algoritmo constante.   
+
+## Notação Big O para Algoritmos Constantes
+- A complexidade de tempo de algoritmos constantes é denotada como O(1) porque o tempo executado é constante, não 
+  variando com o volume de dados.  
+
+### Resumo:
+- Algoritmos constantes têm tempo de execução que não dependem do volume de dados.
+- A complexidade de tempo de algoritmos constantes é representada como O(1).
+- A notação Big O considera constantes como O(1).
+
