@@ -23,3 +23,26 @@
 - - Theta (Θ) Notation
 - - - Esta notação expressa basicamente os limites superior e inferior do tempo de execução de um algoritmo.
 - - - Para qualquer tamanho de entrada de um algoritmo, isso determina a quantidade média de tempo.
+
+# Análise da Complexidade Temporal em Notação Big O
+## Noções Básicas
+- - A notação Big O fornece um limite superior para o tempo de execução de um algoritmo.
+- - Os cálculos são feitos supondo que o algoritmo é executado em uma máquina monoprocessada, sequencialmente.
+
+## Regras para Estimar o Tempo de Execução
+- Operações de Atribuição: Assume-se que consomem uma unidade de tempo.
+- Instrução de Retorno: Considerada uma unidade de tempo.
+- Operações Aritméticas: Consomem uma unidade de tempo (ex: +, - , /, *).
+- Operações Lógicas: Também consomem uma unidade de tempo (ex: E, OU, negação).
+- Outras Operações Simples: Geralmente estimadas em uma unidade de tempo.
+
+## Calculando a Complexidade em Big O
+- Assume-se uma entrada de tamanho muito grande (n).
+- Equações polinomiais são simplificadas descartando termos de ordem inferior (ex: 3n, 1).
+- Multiplicadores constantes também são descartados (ex: 3n² - > n², 6n - > n).
+- O resultado é expresso na forma O(f(n)).
+
+## Aplicação das Regras
+- Exemplo 1: Tempo de execução = n² + 3n + 1 - > O(n²)
+- Exemplo 2: Tempo de execução = 3n² + 6n + 1 - > O(n²)
+
