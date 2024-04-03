@@ -101,3 +101,69 @@
 - A complexidade de tempo de algoritmos constantes é representada como O(1).
 - A notação Big O considera constantes como O(1).
 
+# Como Calcular a complexidade de tempo de um algoritmo linear
+## Visão Geral
+- Este artigo explica como calcular a complexidade de tempo de um algoritmo linear, que é um algoritmo cuja 
+  complexidade de tempo é diretamente proporcional ao tamanho da entrada. 
+
+## Algoritmo de Exemplo
+- Como exemplo, vamos considerar o algoritmo que calcula a soma dos primeiros n números naturais:
+
+````
+public void findSum(int n){
+    int sum = 0;
+    for(int i =1; i <= n; n++){
+        sum =+ i;
+        }
+        return sum;
+}
+````
+## Cálculo da Complexidade de Tempo
+- A complexidade de tempo é calculada contando o número de operações executadas pelo algoritmo em função do tamanho 
+  da entrada (n) e multiplicando o número de operações pelo tempo unitário de cada operação.
+- |---|---|---| 
+- | 2 | Criação da variável sum               
+- | 3 | Criação da variável i, acesso a n, comparação 
+- | 4 | Soma, atribuição 
+- | 5 | 
+- | 6 | Acesso a i, acesso a sum, comparação | 3 | 
+- | 7 | Incremento de i, atribuição | 3 | 
+- | 8 | Acesso a sum, retorno | 2 |
+
+-| Linha | Operações | Tempo Unitário |
+-| 2  |  1  | 1  |
+-| 3  |  1+3n+3+3n | 6n+4  |
+-| 4  |  n(1+1+1+1)  | 4n  |
+-| 6  |  1 + 1  |  2 |
+
+
+## Para o Loop for:
+- Número de Iterações: n + 1
+- Operações por Iteração: 3
+- Tempo Total: (n + 1) x 3 = 3n + 3
+
+## Para i++:
+- Número de Iterações: n
+- Operações por Iteração: 3
+- Tempo Total: n x 3 = 3n
+
+## Para Linha 4 (Loop for):
+- Número de Iterações: n
+- Operações por Iteração: 4
+- Tempo Total: n x 4 = 4n
+
+## Tempo Total:
+- Somando os tempos de cada linha, temos:
+- - Tempo Total = 1 + (3n + 3) + 4n + 2 = 10n + 6
+
+## Complexidade de Tempo Assimptótica
+- Na notação de Big O, ignoramos termos de ordem inferior e constantes, resultando na complexidade de tempo assimptótica:
+
+````markdown
+O(n)
+````
+
+## Conclusão
+- O algoritmo considerado é um algoritmo linear, pois sua complexidade de tempo é diretamente proporcional ao 
+  tamanho da entrada (n). Isso significa que à medida que o tamanho da entrada aumenta, o tempo de execução do 
+  algoritmo também aumenta proporcionalmente.  
