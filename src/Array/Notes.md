@@ -16,3 +16,26 @@
   elemento da array. As divisórias são contínuos, ou seja, ficam uma ao lado da outra. Cada divisória possui dois 
   vizinhos, exceto a primeira e a última divisórias. O tamanho da caixa (número de divisórias) é fixo e não pode ser 
   alterado. Cada divisória possui um índice que especifica sua posição na caixa.   
+
+# Declaração e Inicialização de Arrays
+## Declaração de Arrays
+- Sintaxe para array unidimensional:
+- - <tipo_de_dado> <nome_do_array>[]
+- Ex: ````int myArray[];````
+- Sintaxe preferencial:
+- - <tipo_de_dado>[] <nome_do_array>
+- Ex: ````int[] myArray;````
+
+## Inicialização de Arrays
+- Sintaxe:
+- - <nome_do_array> = new <tipo_de_dado>[<tamanho>]
+- Ex: ````myArray = new int[5];````
+- Tamanho fixo:
+- - O tamanho do array é definido na inicialização e não pode ser alterado.
+- Declaração e inicialização em uma linha:
+- - <tipo_de_dado>[] <nome_do_array> = new <tipo_de_dado>[<tamanho>]
+- Ex: ````int[] myArray = new int[5];````
+- Inicialização com elementos:
+- - <tipo_de_dado>[] <nome_do_array> = {<elemento1>, <elemento2>, ...}
+- Ex: ````int[] myArray = {5, 4, 3, 2, 1}````
+- O tamanho do array será o número de elementos fornecidos.
