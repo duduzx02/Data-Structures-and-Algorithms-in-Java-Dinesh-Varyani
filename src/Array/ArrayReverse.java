@@ -14,7 +14,5 @@ public class ArrayReverse {
             System.out.println(i);
         }
 
-        System.out.println(arr.equals(novoArr));
-
     }
 }
