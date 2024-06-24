@@ -18,7 +18,7 @@ public class IsAPalindrome {
 
     public static void main(String[] args) {
         IsAPalindrome obj = new IsAPalindrome();
-        boolean result = obj.Solution("racecar");
+        boolean result = obj.Solution("madam");
         System.out.println(result);
     }
 }
